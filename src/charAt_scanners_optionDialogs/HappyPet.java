@@ -8,7 +8,7 @@ public class HappyPet {
 	// 2. Add the following variable to the next line: static int happinessLevel = 0;
 	//0
 	// this will be used to store the happiness of your pet
-	int happinessLevel =0;
+	static int happinessLevel =0;
 	
 	public static void main(String[] args) {
 		// 1. Ask the user what kind of pet they want to buy, and store their answer in a variable
@@ -21,30 +21,54 @@ public class HappyPet {
 			//    (ex: cuddle, food, water, take a walk, groom, clean up poop).
 			//    Make sure to customize the title and question too.
 			int task = JOptionPane.showOptionDialog(null, "What do you want your pet to do?", "Hapopypet", 0, JOptionPane.INFORMATION_MESSAGE, null,
-					new String[] { "Feed", "Pet", "Play With" }, null);}
+					new String[] { "Feed", "Pet", "Play With" }, null);
 
 			// 5. Use user input to call the appropriate method created in step 4.
 			
-
+                   
+				if(task == 0) {
+					feed(pet);
+				}
+				
+				if(task == 1) {
+					pet(pet);
+					
+					
+				}
+				
+				if (task == 2) {
+				PlayWith(pet);	
+					
+					
+				}
+				}
 			// 6. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
+            if (happinessLevel > 10) {
+            JOptionPane.showMessageDialog(null, "You love your pet! ");	
             
+            }
+		}
 
-
-	}}
+	
 
 	// 4. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (ex. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
-	public void cat(String happy; {
-		System.out.println(happy + "is happy  and loves you");}
-		
-		public void bunny(String happy; {
-			System.out.println(happy + "is happy  and loves you");}
-			
-			public void dog(String happy; {
-				System.out.println(happy + "is happy  and loves you");
-		
+	public static void feed(String Option1) {
+		System.out.println(Option1 + "is full and wants to sleep on you");
+		happinessLevel+=2;
 	}
-	
+		
+		public static void pet(String Option2) {
+			System.out.println(Option2 + "is happy and became a furball because you pet it so much that it's fur fluffed out");
+			happinessLevel+=2;
+		}
+			
+			public static void PlayWith(String Option3) {
+				System.out.println(Option3 + "it is happy and sleepy now and it now came to you as you were going to sleep and started sleeping on you.");
+				happinessLevel+=2;
+	}
+			
+}
 
