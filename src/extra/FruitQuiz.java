@@ -16,6 +16,7 @@ public class FruitQuiz extends KeyAdapter {
 	void makeQuestions() {
 		question1 = new JLabel("<html>Which is not a real fruit? <br> A: Dragon Fruit <br> B: Durian <br> C: Crazyberry</html>");
 		// 11. Make another question called "question2".  Use question1 above as a guide.
+		question1 = new JLabel("<html>Which do you like the best? <br> A: Dragon Fruit <br> B: cotton candy grapes <br> C: Loquat</html>");
 	}
 
 	@Override

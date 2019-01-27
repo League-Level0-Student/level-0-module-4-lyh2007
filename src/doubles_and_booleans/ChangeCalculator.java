@@ -29,6 +29,6 @@ public class ChangeCalculator {
 		// Tell the user how much money they have
 		JOptionPane.showMessageDialog(null, "you have $" + money);
 		JOptionPane.showMessageDialog(null,
-				"I made you a figurative sandwich.(you said to make you a sandwich, you didn't specify which kind. :3)");
+				"I made you a figurative sandwich.(you said to make you a sandwich, you didn't specify which kind. :3 )");                                                    
 	}
 }

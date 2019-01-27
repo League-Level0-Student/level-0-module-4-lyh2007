@@ -12,7 +12,7 @@ public class HappyPet {
 	
 	public static void main(String[] args) {
 		// 1. Ask the user what kind of pet they want to buy, and store their answer in a variable
-        String pet = JOptionPane.showInputDialog("what type of pet do you want to get? A dog, a bunny or a cat?");
+        String pet = JOptionPane.showInputDialog("what type of pet do you want to get? A dog, a Cockatoo or a cat?");
 		// 7. REPEAT steps 3 - 6 enough times to make your pet happy!
 		for (int i=0; i<6; i++) {
 			
@@ -21,7 +21,7 @@ public class HappyPet {
 			//    (ex: cuddle, food, water, take a walk, groom, clean up poop).
 			//    Make sure to customize the title and question too.
 			int task = JOptionPane.showOptionDialog(null, "What do you want your pet to do?", "Hapopypet", 0, JOptionPane.INFORMATION_MESSAGE, null,
-					new String[] { "Feed", "Pet", "Play With" }, null);
+					new String[] { "hate you", "like you", "be lazy" }, null);
 
 			// 5. Use user input to call the appropriate method created in step 4.
 			
@@ -56,17 +56,17 @@ public class HappyPet {
 	//    Each method should create a pop-up with the pet's response (ex. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
 	public static void feed(String Option1) {
-		System.out.println(Option1 + "is full and wants to sleep on you");
+		System.out.println(Option1 + " hates you and ran away from home but only came back for food and water.   ");
 		happinessLevel+=2;
 	}
 		
 		public static void pet(String Option2) {
-			System.out.println(Option2 + "is happy and became a furball because you pet it so much that it's fur fluffed out");
+			System.out.println(Option2 + " is happy and became a ball of feathers/fur because you pet it so much that it's feathers/fur fluffed out");
 			happinessLevel+=2;
 		}
 			
 			public static void PlayWith(String Option3) {
-				System.out.println(Option3 + "it is happy and sleepy now and it now came to you as you were going to sleep and started sleeping on you.");
+				System.out.println(Option3 + " is happy and sleepy now and it now came to you as you were going to sleep and started sleeping on you.");
 				happinessLevel+=2;
 	}
 			
